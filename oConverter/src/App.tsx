@@ -1,4 +1,5 @@
 import "./App.scss";
+import currencies from "./data/currencies";
 
 function App() {
   return (
