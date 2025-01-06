@@ -1,0 +1,78 @@
+// --- Variables ---
+$color-main: #bb5432;
+$color-alt: #f1c5b6;
+$color-light: #fff;
+
+// --- App component ---
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+
+  color: $color-main;
+  background-color: $color-light;
+  text-align: center;
+
+  .header {
+    background-color: $color-main;
+    color: $color-light;
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    &__value {
+      font-size: 1.2rem;
+      font-weight: 200;
+    }
+  }
+
+  .currencies {
+    color: $color-main;
+    overflow: scroll;
+  }
+
+  .currency {
+    font-size: 1.5rem;
+    border-top: 1px solid $color-alt;
+    transition: background-color 1s;
+
+    &:hover {
+      background-color: $color-alt;
+      transition: background-color 0.2s;
+    }
+
+    &__button {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+      cursor: pointer;
+      padding: 1rem;
+    }
+  }
+
+  .result {
+    color: $color-main;
+    margin: 2rem;
+    padding: 0.3rem;
+
+    &__amount {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    &__currency {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+  }
+}
